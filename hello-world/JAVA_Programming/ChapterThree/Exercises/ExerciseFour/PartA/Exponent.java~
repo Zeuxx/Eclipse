@@ -1,0 +1,25 @@
+// Exponent.java
+// Isaac Ussery
+// 06/18/2017
+
+import java.util.Scanner;
+
+public class Exponent
+{
+    public static void main(String[] args)
+    {
+	int value;
+	Scanner input = new Scanner(System.in);
+
+	System.out.println("Enter a value: ");
+	value = input.nextInt();
+
+	square(value);
+	cube(value);
+    }
+
+    public static int square(int value)
+    {
+	
+    }
+}
