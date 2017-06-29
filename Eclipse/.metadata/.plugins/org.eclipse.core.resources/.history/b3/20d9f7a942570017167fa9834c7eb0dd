@@ -1,0 +1,37 @@
+package MySQLConnection;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class MySQLConnection
+{
+	// Variable Declarations
+	private String user;
+	private char[] password;
+	
+	// Mutator Methods
+	public String getUser()
+	{
+		return this.user;
+	}
+	
+	public char[] getPassword()
+	{
+		return this.password;
+	}
+	
+	public void setUser(String user)
+	{
+		this.user = user;
+	}
+	
+	public void setPassword(char[] password)
+	{
+		this.password = password;
+	}
+	
+	public Connection makeConnection	
+
+}

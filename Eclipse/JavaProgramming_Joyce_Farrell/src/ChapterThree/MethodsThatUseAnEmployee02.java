@@ -1,0 +1,43 @@
+package ChapterThree;
+
+//MethodsThatUseAnEmployee.java
+//Isaac Ussery
+//06/17/2017
+
+import java.util.Scanner;
+
+class MethodsThatUseAnEmployee02
+{
+ public static void main(String[] args)
+ {
+	Employee02 myEmployee;
+	myEmployee = getEmployeeData();
+	displayEmployee(myEmployee);
+ }
+
+ public static Employee02 getEmployeeData()
+ {
+	Employee02 tempEmp = new Employee02();
+	int id;
+	double sal;
+	
+	Scanner input = new Scanner(System.in);
+	System.out.print("Enter employee ID: ");
+	id = input.nextInt();
+	
+	System.out.print("Enter employee salary: ");
+	sal = input.nextDouble();
+	
+	input.close();
+
+	tempEmp.setEmpNum(id);
+	tempEmp.setEmpSalary(sal);
+	
+	return tempEmp;
+ }
+
+ public static void displayEmployee(Employee02 anEmp)
+ {
+	System.out.println("\nEmployee #" + anEmp.getEmpNum() + " Salary is " + anEmp.getEmpSalary());
+ }
+}

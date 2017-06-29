@@ -1,0 +1,64 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+
+public class Login
+{
+
+	private JFrame frame;
+	private JTextField userName;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args)
+	{
+		EventQueue.invokeLater(new Runnable()
+		{
+			public void run()
+			{
+				try
+				{
+					Login window = new Login();
+					window.frame.setVisible(true);
+				} catch (Exception e)
+				{
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Login()
+	{
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize()
+	{
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Login:");
+		lblNewLabel.setBounds(29, 63, 70, 15);
+		frame.getContentPane().add(lblNewLabel);
+		
+		userName = new JTextField();
+		userName.setToolTipText("Enter your user name");
+		userName.setText("admin");
+		userName.setBounds(94, 61, 114, 19);
+		frame.getContentPane().add(userName);
+		userName.setColumns(10);
+	}
+}

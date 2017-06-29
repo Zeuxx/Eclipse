@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commands>
+	<move id="Nimbus" category="JRE" next-look-n-feel="Metal"/>
+</commands>
